@@ -1,2 +1,11 @@
-# Homework03_Program1
- CRUD App Homework Project
+The main screen is your central hub – it displays a list of all students and has buttons to add a new student, add a new major, or search for students. Each student is listed by their first name, last name, and username, so it’s easy to scroll and spot who you’re looking for. If you want to dive into a student’s details, just tap on their entry. Want to delete someone? You can long-press on a student to remove them permanently (and it’ll confirm before deletion, just to be safe).
+
+Adding a student is a quick process. You’ll fill in basic details like first and last name, username, email, age, GPA, and major. The app checks to make sure usernames and emails are unique, so no duplicates slip in. Once you hit “Add,” the student’s information is saved, and all fields clear out, so you’re ready to add another student without any extra clicks.
+
+If you want to see detailed information about a student, the app has you covered. The “View Student” screen shows everything about a student in one place. From here, you can tap to edit their information (everything except the username, which is the unique identifier), or you can delete the student if needed. If you update any details, the app automatically takes you back to the main screen with everything refreshed.
+
+You can also add new majors in the app. Just give the major a name and a prefix (like “CIS” for Computer Information Systems). The app will make sure you’re not adding duplicates, so each major and prefix stays unique. Once a new major is added, it appears in the dropdown list for students, so it’s always up-to-date.
+
+The search function is flexible and lets you filter students by a few different fields. Whether you’re searching by name, username, GPA range, or major, the app will display matching results so you can quickly find the student you need. Each entry is clickable, so you can go directly to a detailed view from the search results.
+
+This app is built with an SQLite database, which means all your data is saved locally on the device – no need for internet access. The database has two tables: one for students and one for majors. For students, you’ll have fields like first name, last name, username (which is the primary key), email, age, GPA, and major. For majors, each entry has an ID, a name, and a prefix.
