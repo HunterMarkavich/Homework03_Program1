@@ -1,0 +1,256 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/tv_v_newStudentHeader"
+        android:layout_width="412dp"
+        android:layout_height="54dp"
+        android:background="#6750A3"
+        android:fontFamily="sans-serif-black"
+        android:text="ADD NEW STUDENT"
+        android:textAlignment="center"
+        android:textColor="#FFFFFF"
+        android:textSize="40sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tv_v_viewStudentNameHere"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="23dp"
+        android:layout_marginTop="24dp"
+        android:text="Username:"
+        android:textColor="#000000"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_v_newStudentHeader" />
+
+    <EditText
+        android:id="@+id/et_v_NewStudentAddUserName"
+        android:layout_width="266dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="14dp"
+        android:ems="10"
+        android:inputType="text"
+        android:textColor="#000000"
+        android:textSize="20sp"
+        app:layout_constraintStart_toEndOf="@+id/tv_v_viewStudentNameHere"
+        app:layout_constraintTop_toBottomOf="@+id/tv_v_newStudentHeader"
+        tools:text="uname here" />
+
+    <EditText
+        android:id="@+id/et_v_newStudentAddFirstName"
+        android:layout_width="266dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:ems="10"
+        android:inputType="text"
+        android:textColor="#000000"
+        android:textSize="20sp"
+        app:layout_constraintStart_toEndOf="@+id/tv_v_newStudentFirstName"
+        app:layout_constraintTop_toBottomOf="@+id/et_v_NewStudentAddUserName"
+        tools:text="fname here" />
+
+    <EditText
+        android:id="@+id/et_v_NewStudentAddLastName"
+        android:layout_width="266dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:ems="10"
+        android:inputType="text"
+        android:textColor="#000000"
+        android:textSize="20sp"
+        app:layout_constraintStart_toEndOf="@+id/tv_v_newStudentLastName"
+        app:layout_constraintTop_toBottomOf="@+id/et_v_newStudentAddFirstName"
+        tools:text="lname here" />
+
+    <EditText
+        android:id="@+id/et_v_newStudentAddAge"
+        android:layout_width="266dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:ems="10"
+        android:inputType="text"
+        android:textColor="#000000"
+        android:textSize="20sp"
+        app:layout_constraintStart_toEndOf="@+id/tv_v_newStudentAge"
+        app:layout_constraintTop_toBottomOf="@+id/et_v_newStudentAddEmail"
+        tools:text="agehere" />
+
+    <TextView
+        android:id="@+id/tv_v_newStudentGPA"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="76dp"
+        android:layout_marginTop="45dp"
+        android:text="GPA:"
+        android:textColor="#000000"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_v_newStudentAge" />
+
+    <TextView
+        android:id="@+id/tv_v_newStudentLastName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="45dp"
+        android:text="Last Name:"
+        android:textColor="#000000"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_v_newStudentFirstName" />
+
+    <TextView
+        android:id="@+id/tv_v_newStudentEmail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="64dp"
+        android:layout_marginTop="45dp"
+        android:text="Email:"
+        android:textColor="#000000"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_v_newStudentLastName" />
+
+    <EditText
+        android:id="@+id/et_v_newStudentAddEmail"
+        android:layout_width="266dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:ems="10"
+        android:inputType="text"
+        android:textColor="#000000"
+        android:textSize="20sp"
+        app:layout_constraintStart_toEndOf="@+id/tv_v_newStudentEmail"
+        app:layout_constraintTop_toBottomOf="@+id/et_v_NewStudentAddLastName"
+        tools:text="emailhere" />
+
+    <TextView
+        android:id="@+id/tv_v_newStudentAge"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="80dp"
+        android:layout_marginTop="45dp"
+        android:text="Age:"
+        android:textColor="#000000"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_v_newStudentEmail" />
+
+    <Button
+        android:id="@+id/btn_v_newStudentAddStudentButton"
+        android:layout_width="300dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="52dp"
+        android:layout_marginTop="20dp"
+        android:fontFamily="sans-serif-black"
+        android:text="ADD STUDENT"
+        android:textSize="16sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/sp_v_newStudentDropDown" />
+
+    <EditText
+        android:id="@+id/et_v_newStudentAddGPA"
+        android:layout_width="266dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="1dp"
+        android:layout_marginTop="24dp"
+        android:ems="10"
+        android:inputType="text"
+        android:textColor="#000000"
+        android:textSize="20sp"
+        app:layout_constraintStart_toEndOf="@+id/tv_v_newStudentGPA"
+        app:layout_constraintTop_toBottomOf="@+id/et_v_newStudentAddAge"
+        tools:text="gpahere" />
+
+    <TextView
+        android:id="@+id/tv_v_newStudentMajor"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="64dp"
+        android:layout_marginTop="40dp"
+        android:text="Major:"
+        android:textColor="#000000"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_v_newStudentGPA" />
+
+    <Spinner
+        android:id="@+id/sp_v_newStudentDropDown"
+        android:layout_width="266dp"
+        android:layout_height="36dp"
+        android:layout_marginTop="24dp"
+        app:layout_constraintStart_toEndOf="@+id/tv_v_newStudentMajor"
+        app:layout_constraintTop_toBottomOf="@+id/et_v_newStudentAddGPA" />
+
+    <TextView
+        android:id="@+id/tv_v_newStudentFirstName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="45dp"
+        android:text="First Name:"
+        android:textColor="#000000"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_v_viewStudentNameHere" />
+
+    <Button
+        android:id="@+id/btn_v_newStudentBackButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="16dp"
+        android:text="BACK"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <TextView
+        android:id="@+id/tv_v_newStudentAddUsername_error"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="119dp"
+        android:text="Error: Username already taken"
+        android:textColor="#950000"
+        android:textStyle="italic"
+        android:visibility="invisible"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/et_v_NewStudentAddUserName"
+        tools:visibility="visible" />
+
+    <TextView
+        android:id="@+id/tv_v_newStudentAddEmail_error"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="119dp"
+        android:text="Error: Email already taken"
+        android:textColor="#950000"
+        android:textStyle="italic"
+        android:visibility="invisible"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/et_v_newStudentAddEmail"
+        tools:visibility="visible" />
+
+    <TextView
+        android:id="@+id/tv_v_newStudentAddStudent_error"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="108dp"
+        android:layout_marginTop="8dp"
+        android:text="Error: Please fill out entire form"
+        android:textColor="#950000"
+        android:textStyle="italic"
+        android:visibility="invisible"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btn_v_newStudentAddStudentButton"
+        tools:visibility="visible" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
